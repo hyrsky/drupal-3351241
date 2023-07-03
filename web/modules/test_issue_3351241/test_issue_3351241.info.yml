@@ -1,0 +1,5 @@
+name: 'Test issue 3351241'
+type: module
+description: 'Test for issue 3351241'
+package: Custom
+core_version_requirement: ^10

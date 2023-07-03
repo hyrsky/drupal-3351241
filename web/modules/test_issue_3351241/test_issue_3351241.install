@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\user\Entity\User;
+
+/**
+ * Set preferred_admin_langcode for user id 1.
+ *
+ * @return void
+ */
+function test_issue_3351241_install()
+{
+    $admin = User::load(1);
+    $admin->set('preferred_admin_langcode', 'en');
+    $admin->save();
+}
